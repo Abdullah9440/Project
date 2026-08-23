@@ -1,4 +1,5 @@
-#without using API 
+#without using API
+#There are only 4 currencies in this program USD, INR, EUR, BDT
 def convert(amount, rate):
     return amount * rate
 
