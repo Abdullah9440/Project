@@ -1,8 +1,22 @@
-task = []
+task = {}
 
 def add_task ():
-    add_work =input('task name : ')
-    task.append(add_work)
+    name = input('task name : ')
+    priority = input('priority high/mediam/low ? : ')
+    dead_line = input('enter the finishing deadline : ')
+    
+    task_number = len(task) + 1
+    
+    task[task_number] = {
+    "name" : name,
+    "priority" : priority,
+    "dead_line" : dead_line
+    
+    
+}
+   
+print('vale added succesfully')
+    
     
 def view_task():
     if len(task) == 0:
